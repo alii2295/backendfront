@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier annonce</title>
+
+</head>
+<body> 
+    <div class="container">
+        <h2>Modifier une annonce</h2>
+        <form (ngSubmit)="modifierAnnonce()">
+        <section *ngIf="annonce"> 
+            
+          <div class="form-group">
+                <label for="model">Modèle :</label>
+                <input type="text" id="model" [(ngModel)]="annonce.model" name="model" required>
+            </div>
+            <div class="form-group">
+                <label for="matricule">Matricule :</label>
+                <input type="text" id="matricule" [(ngModel)]="annonce.matricule" name="matricule" required>
+            </div>
+            <div class="form-group">
+                <label for="kilometrage">Kilométrage :</label>
+                <input type="number" id="kilometrage" [(ngModel)]="annonce.kilometrage" name="kilometrage" required>
+            </div>
+            <div class="form-group">
+                <label for="carburant">Carburant :</label>
+                <select id="carburant" [(ngModel)]="annonce.carburant" name="carburant" required>
+                    <option value="essence">Essence</option>
+                    <option value="gaz">Gaz</option>
+                    <option value="gazoil">Gazoil</option>
+                    <option value="electrique">Électrique</option>
+                 </select>
+           </div>
+           <!--  <img [src]="'assets/' + annonce.photo" alt="Image de l'annonce">
+           <div class="form-group">
+            <label for="photo">Photo :</label>
+            <input type="file" (change)="onFileSelected($event)" id="photo" name="photo" accept="image/*"> 
+             </div> -->
+             <!-- Affichage de l'image actuelle -->
+              
+      <div class="form-group">
+        <label for="photo">Photo actuelle :</label>
+        <div *ngIf="annonce.photo">
+          <img [src]="'assets/' + annonce.photo" alt="Image actuelle">
+        </div>
+      </div> 
+
+       Sélection d'une nouvelle photo 
+      <div class="form-group">
+        <input type="file" (change)="onFileSelected($event)" id="photo" name="photo" accept="image/*">
+      </div> 
+            
+<!--
+             <div class="form-group">
+            <label for="photo">Photo :</label>
+            <input type="file" (change)="onFileSelected($event)" id="photo" name="photo" accept="image/*">
+            </div>  
+            -->
+           <!-- <div class="form-group">
+                <label for="photo">Photo :</label>
+                <input type="file" (change)="onFileSelected($event)" id="photo" name="photo" accept="image/*">
+                 Afficher l'image actuelle 
+                <img *ngIf="annonce.photo" [src]="annonce.photo" alt="Image actuelle" style="max-width: 200px; margin-top: 10px;">
+                 Afficher l'aperçu de la nouvelle image 
+                <img *ngIf="annonce.photo" [src]="annonce.photo" alt="Image Preview" style="max-width: 200px; margin-top: 10px;">
+            </div> -->
+        </section> 
+     <button type="submit">Modifier</button>
+    </form>
+    </div>  
+      
+</body>
+</html>

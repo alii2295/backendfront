@@ -1,0 +1,40 @@
+/* profil.component.css */
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    outline: none;
+    position: fixed;
+    right: 20px; /* Positionne le bouton à 20 pixels du bord droit */
+    top: 20px; /* Positionne le bouton à 20 pixels du bord supérieur */
+  }
+  
+  .profile-button:hover {
+    background-color: #f0f0f5;
+    border-color: #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+  }
+  
+  .profile-name {
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }

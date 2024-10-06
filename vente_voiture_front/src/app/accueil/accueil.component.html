@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site d'Annonces</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/voiture.png" alt="Logo">
+            <h1>Mon Site d'Annonces</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="search-container">
+            <h2>Recherche d'annonces</h2>
+            <input type="text" [(ngModel)]="searchQuery" placeholder="Rechercher par modèle..." />
+            <button (click)="onSearch()">Rechercher</button>
+        </section>
+
+        <section class="annonces-list">
+            <div class="annonce" *ngFor="let annonce of filteredAnnonces">
+                <img [src]="'assets/' + annonce.photo" alt="Image de l'annonce">
+                <div class="annonce-details">
+                    <h2>{{ annonce.model }}</h2>
+                    <p>Matricule: {{ annonce.matricule }}</p>
+                    <p>Kilométrage: {{ annonce.kilometrage }}</p>
+                    <p>Carburant: {{ annonce.carburant }}</p>
+                </div>
+               
+                <div  *ngIf="isAdmin" class="annonce-actions">
+                    <button (click)="redirectToDetails(annonce.id)">
+                        <i class="material-icons">info</i> Détails
+                    </button>
+                    <button (click)="supprimer(annonce.id)">
+                        <i class="material-icons">delete</i> Supprimer
+                    </button>
+                    <button (click)="edit(annonce.id)">
+                        <i class="material-icons">edit</i> Modifier
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mon Site d'Annonces. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une annonce</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Ajouter une annonce</h2>
+        <form (ngSubmit)="ajouterAnnonce()">
+          <div class="form-group">
+            <label for="model">Modèle :</label>
+            <input type="text" id="model" [(ngModel)]="nouvelleAnnonce.model" name="model" required>
+          </div>
+          <div class="form-group">
+            <label for="matricule">Matricule :</label>
+            <input type="text" id="matricule" [(ngModel)]="nouvelleAnnonce.matricule" name="matricule" required>
+          </div>
+          <div class="form-group">
+            <label for="kilometrage">Kilométrage :</label>
+            <input type="number" id="kilometrage" [(ngModel)]="nouvelleAnnonce.kilometrage" name="kilometrage" required>
+          </div>
+          <div class="form-group">
+            <label for="carburant">Carburant :</label>
+            <select id="carburant" [(ngModel)]="nouvelleAnnonce.carburant" name="carburant" required>
+              <option value="essence">Essence</option>
+              <option value="gaz">Gaz</option>
+              <option value="gazoil">Gazoil</option>
+              <option value="electrique">Électrique</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="photo">Photo :</label>
+            <input type="file" (change)="onFileSelected($event)" id="photo" name="photo" accept="image/*">
+          </div>
+          <button type="submit">Ajouter</button>
+        </form>
+      </div>
+      
+</body>
+</html>

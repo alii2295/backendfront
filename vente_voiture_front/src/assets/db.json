@@ -1,0 +1,115 @@
+{
+  "annonces": [
+    {
+      "id": "daf9",
+      "model": "range",
+      "matricule": "240",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "rangerover.jpg"
+    },
+    {
+      "id": "d8ec",
+      "model": "polo 6",
+      "matricule": "105",
+      "kilometrage": 250000,
+      "carburant": "essence",
+      "photo": "polo5.jpg"
+    },
+    {
+      "id": "ed9b",
+      "model": "bmw",
+      "matricule": "250",
+      "kilometrage": 200,
+      "carburant": "essence",
+      "photo": "bmw.jpg"
+    },
+    {
+      "id": "adb1",
+      "model": "kia sportage",
+      "matricule": "240",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "kiasportage.png"
+    },
+    {
+      "id": "888e",
+      "model": "golf 7 ",
+      "matricule": "250",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "user.png",
+      "userid": null
+    },
+    {
+      "id": "008c",
+      "model": "golf 8",
+      "matricule": "200",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "user.png",
+      "userid": null
+    },
+    {
+      "id": "160b",
+      "model": "golf 9",
+      "matricule": "200",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "voiture.png",
+      "userid": "ryhab"
+    },
+    {
+      "id": "12e5",
+      "model": "kia sportage",
+      "matricule": "250",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "user.png",
+      "userid": null
+    },
+    {
+      "id": "1666",
+      "model": "golf 10",
+      "matricule": "280",
+      "kilometrage": 0,
+      "carburant": "essence",
+      "photo": "polo5.jpg",
+      "userid": "GM25-BVto616bkuAA3lv5"
+    }
+  ],
+  "User": [
+    {
+      "id": "xWegyjN8ArfJOgqFP9pQ2",
+      "nom": "ali",
+      "prenom": "aalii",
+      "password": "ali",
+      "email": "ali@gmail.com",
+      "annonces": []
+    },
+    {
+      "id": "RnCmSKKAY_A6CgU3RUlKV",
+      "nom": "rihab",
+      "prenom": "ryhab",
+      "password": "rihab",
+      "email": "rihab@gmail.com",
+      "annonces": []
+    },
+    {
+      "id": "lijd11avQYjdQIWc-JJqz",
+      "nom": "slima",
+      "prenom": "rahala",
+      "password": "slim",
+      "email": "slima",
+      "annonces": []
+    },
+    {
+      "id": "GM25-BVto616bkuAA3lv5",
+      "nom": "yassine",
+      "prenom": "yassine",
+      "password": "yassine",
+      "email": "yassine@gmail.com",
+      "annonces": []
+    }
+  ]
+}

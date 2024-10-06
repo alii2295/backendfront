@@ -1,0 +1,27 @@
+/* notification.component.css */
+.notification {
+    background-color: #f8d7da; /* Couleur de fond */
+    color: #721c24;            /* Couleur du texte */
+    padding: 15px;             /* Espacement interne */
+    border: 1px solid #f5c6cb; /* Bordure */
+    border-radius: 5px;        /* Coins arrondis */
+    position: fixed;           /* Fixer la position pour la rendre visible sur toutes les pages */
+    top: 10px;                 /* Espacement du haut */
+    right: 10px;               /* Espacement à droite */
+    z-index: 1000;             /* Assurer que la notification soit au-dessus des autres éléments */
+    max-width: 300px;          /* Largeur maximale */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre */
+  }
+  
+  .notification button {
+    background-color: #721c24; /* Couleur du bouton */
+    color: white;              /* Couleur du texte du bouton */
+    border: none;              /* Pas de bordure */
+    padding: 5px 10px;         /* Espacement interne du bouton */
+    border-radius: 3px;        /* Coins arrondis du bouton */
+    cursor: pointer;           /* Curseur de la souris sur le bouton */
+  }
+  
+  .notification button:hover {
+    background-color: #5a1a1d; /* Couleur du bouton au survol */
+  }

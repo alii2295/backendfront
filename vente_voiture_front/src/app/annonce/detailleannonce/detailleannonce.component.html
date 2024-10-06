@@ -1,0 +1,22 @@
+<div *ngIf="annonce">
+  <h2>{{ annonce.model }}</h2>
+  
+  <img [src]="'assets/' + annonce.photo" alt="Image de l'annonce">
+  
+  <p>Matricule: {{ annonce.matricule }}</p>
+  <p>Kilométrage: {{ annonce.kilometrage }}</p>
+  <p>Carburant: {{ annonce.carburant }}</p>
+  <!-- Ajoutez d'autres détails d'annonce à afficher ici -->
+  <button type="submit"(click)="supprimer(annonce.id)">Supprimer annonce</button>
+
+</div>
+
+
+
+
+
+<div *ngIf="!annonce">
+  <p>Chargement des détails de l'annonce...</p>
+</div>
+
+
